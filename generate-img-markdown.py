@@ -18,7 +18,7 @@ filenames = [f for f in listdir(source_path) if isfile(join(source_path, f))]
 # ![alt-tag](/assets/blog/rgby-rom/RGBY-ROM-raw-nits.jpg)
 
 for filename in filenames:    
-    alt = filename.replace('-', ' ')
+    alt = filename.replace('-', ' ').split('.')[0]
     filepath = relative_path + '/' + filename    
     print(f'![{alt}]({filepath})')
     print()

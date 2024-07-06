@@ -7,4 +7,5 @@ export type Post = {
   pinned: boolean;
   content: string;
   preview?: boolean;
+  repoLink: string;
 };

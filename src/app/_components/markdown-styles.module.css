@@ -16,3 +16,23 @@
 .markdown h3 {
   @apply text-2xl mt-8 mb-4 leading-snug;
 }
+
+/* Link formatting */
+.markdown a {
+  color: #007bff;  
+  text-decoration: none;   
+  transition: color 0.2s;
+}
+
+.markdown a:hover {
+    color: #06b300; 
+    text-decoration: underline; 
+}
+
+.markdown a:visited {
+    color: #0069d9;
+}
+
+.markdown a:active {
+    color: #0056b3;   
+}

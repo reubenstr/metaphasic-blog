@@ -1,9 +1,17 @@
 import { Node } from 'unist';
 import { visit } from 'unist-util-visit';
 
+
+interface ChildNode extends Node {
+  tagName: String;
+  properties: {src : String} 
+}
+
 interface ElementNode extends Node {
   type: 'element';
-  children: Node[];
+  children: ChildNode[]; 
+  tagName: String;
+  properties: {src : String, "type" : "video/mp4"} 
 }
 
 function remarkLocalVideoEmbedder() {
