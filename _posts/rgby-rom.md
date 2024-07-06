@@ -7,7 +7,7 @@ pinned: true
 repoLink: "https://github.com/reubenstr/RGBY-ROM"
 ---
 
-RGBY-ROM is a computer using ROM memory encoded as red, green, blue, and yellow acrylic squares.
+RGBY-ROM is a special purpose computer using ROM memory encoded as red, green, blue, and yellow acrylic squares.
 
 ![RGBY ROM context](/assets/blog/rgby-rom/RGBY-ROM-context.jpg)
 
@@ -15,7 +15,7 @@ RGBY-ROM is a computer using ROM memory encoded as red, green, blue, and yellow 
 
 ![rgby-rom video](/assets/blog/rgby-rom/videos/RGBY-ROM-demo-video.mp4)
 
-Video of the computer loading a program into memory from the RGBY data cartridge. The program creates patterns on the LED port.
+Video of the computer loading a program into memory from the RGBY data cartridge that creates patterns on the LED port.
 
 ![RGBY ROM raw nits](/assets/blog/rgby-rom/RGBY-ROM-raw-nits.jpg)
 

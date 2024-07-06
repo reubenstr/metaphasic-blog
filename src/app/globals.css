@@ -6,15 +6,34 @@
 .header-link {    
     padding: 0.25rem 0.5rem;
     border-radius: 0.2rem;   
-    transition: background-color 0.25s ease;
+    transition: background-color 0.5s ease;
     display: inline-block;
     text-decoration: none;   
     margin-right: 1rem;
 }
 .header-link:hover {
-    background-color: #00ff2a;
+    background-color: #000000;
+    color: white;
 }
 
+
+.repoLink {
+    display: inline-block;
+    width: 450px;
+    height: 60px;
+    background-color: red;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    line-height: 60px;
+}
+
+.repoLink:hover {
+    background-color: darkred;
+}
 
 /* List formatting */
 ul {

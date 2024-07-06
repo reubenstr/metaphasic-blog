@@ -18,7 +18,7 @@ export function Intro() {
         <a className="header-link" href="/contact"> CONTACT </a>
         <a className="header-link" href="https://github.com/reubenstr"> GIT </a>
       </div>
-      <hr className="mb-6" />
+      <hr className="mb-10" />
     </section>
   );
 }

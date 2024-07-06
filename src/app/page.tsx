@@ -9,7 +9,7 @@ export default function Index() {
   return (
     <main>
       <Container>
-        <Intro /> 
+        <Intro />
         {allPosts.length > 0 && <PostsAsBlocks posts={allPosts} />}
       </Container>
     </main>

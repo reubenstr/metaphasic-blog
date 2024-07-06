@@ -12,7 +12,13 @@ export function PostBody({ content, repoLink }: Props) {
         className={markdownStyles["markdown"]}
         dangerouslySetInnerHTML={{ __html: content }}
       />
-      <a href={repoLink}>GitHub</a>
+
+      <div className="flex justify-center items-center">
+        <a className="repoLink" href={repoLink}>Source code, design files, and more on GitHub</a>
+      </div>
+
+
+
     </div>
   );
 }

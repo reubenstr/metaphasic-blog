@@ -83,13 +83,20 @@ const Switch = () => {
     const index = modes.indexOf(mode);
     setMode(modes[(index + 1) % modes.length]);
   };
-  return (
-    <button
-      suppressHydrationWarning
-      className={styles.switch}
-      onClick={handleModeSwitch}
-    />
-  );
+
+
+  // return (
+  //   <p  onClick={handleModeSwitch}>Light/Dark</p>
+  // )
+
+  // return (
+  //   <button
+  //     suppressHydrationWarning
+  //     className={styles.switch}
+  //     onClick={handleModeSwitch}
+  //   />
+  // );
+
 };
 
 const Script = memo(() => (
