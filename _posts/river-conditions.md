@@ -3,7 +3,7 @@ title: "River Conditions"
 excerpt: "Water Flow and Health Tracking Dashboard"
 coverImage: "/assets/blog/preview/cover.jpg"
 date: "2019-04-16T05:35:07.322Z"
-favorited: true
+pinned: true
 ogImage:
   url: "/assets/blog/preview/cover.jpg"
 ---

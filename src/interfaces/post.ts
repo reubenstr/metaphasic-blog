@@ -4,10 +4,7 @@ export type Post = {
   date: string;
   coverImage: string; 
   excerpt: string;
-  favorited: boolean;
-  ogImage: {
-    url: string;
-  };
+  pinned: boolean;
   content: string;
   preview?: boolean;
 };

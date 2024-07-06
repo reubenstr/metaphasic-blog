@@ -46,13 +46,13 @@ export function generateMetadata({ params }: Params): Metadata {
     return notFound();
   }
 
-  const title = `${post.title} | Electronic Project Blog`;
+  const title = `${post.title} | Electronics Project Blog`;
 
   return {
     title,
     openGraph: {
       title,
-      images: [post.ogImage.url],
+      images: [post.coverImage],
     },
   };
 }
