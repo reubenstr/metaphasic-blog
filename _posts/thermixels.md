@@ -15,7 +15,7 @@ Each thermixel (the combination of words thermal and pixel) is made from a 365 o
 
 ![thermixels leptop camera](/assets/blog/thermixels/thermixels-leptop-camera.jpg)
 
-A Flir Lepton 3.5 thermal camera with 160x120 pixel resolution is used to capture images of the thermixel array.
+A Flir Lepton 3.5 thermal camera with 160x120 pixel resolution is used to capture images of the thermixel array. The Lepton is installed on a [PureThermal Breakout Board](https://groupgets.com/products/purethermal-3) by GroupGets. The firmware on the breakout board required modification because it did not output the data over UART only USB. (Git link at bottom of page)
 
 ![thermixels display](/assets/blog/thermixels/thermixels-display.jpg)
 
@@ -33,7 +33,7 @@ Due to the simple nature of the electronics they were hand wired and soldered. T
 
 <hr/>
 
-The original goal was to make a thermixel grid large enough to generate a QR code which would require 5 x 5 thermixel grid arrays for a total of 25 x 25 = 625 thermixels. The challenge is not the electronics, but really the thermal imaging as the Leptons low resolution of 160x120 would likely not be able to provide enough clarity of the QR code and higher resolutions cameras are outside a reasonable price range. Another challenge is creating sharper thermixels, as you can see from some of the images, the solder joints of the resistors create a cool spot which adds noise to thermally captured images. With that, a thermixel may need to be reimagined to something like a heater coil inside a plastic topped cylinder. Lastly, cooling became an issue when the proof of concept thermixel array was powered for a prolonged period of time. The delta between ambient and thermixel temperatures began to equalize thus reducing the thermal contrast of thermally captured images.
+The original goal was to make a thermixel grid large enough to generate a QR code which would require 5 x 5 thermixel grid arrays for a total of 25 x 25 = 625 thermixels. The challenge is not the electronics, but really the thermal imaging as the Leptons low resolution of 160x120 would likely not be able to provide enough clarity of the QR code and higher resolutions cameras are outside a reasonable price range. Another challenge is creating sharper thermixels, as you can see from some of the images, the solder joints of the resistors create cool spots which adds noise to thermally captured images. With that, a thermixel may need to be reimagined to something like a heater coil inside a plastic topped cylinder. Lastly, cooling became an issue when the proof of concept thermixel array was powered for a prolonged period of time. The delta between ambient and thermixel temperatures began to equalize thus reducing the thermal contrast of thermally captured images.
 
 
 <!--- ![thermixels lepton capture](/assets/blog/thermixels/thermixels-lepton-capture.jpg) --->
