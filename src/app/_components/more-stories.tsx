@@ -17,8 +17,7 @@ export function MoreStories({ posts }: Props) {
           <PostPreview
             key={post.slug}
             title={post.title}
-            coverImage={post.coverImage}
-            date={post.date}            
+            coverImage={post.coverImage}                  
             slug={post.slug}
             excerpt={post.excerpt}
           />

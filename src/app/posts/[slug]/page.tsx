@@ -17,16 +17,19 @@ export default async function Post({ params }: Params) {
   const content = await markdownToHtml(post.content || "");
 
   return (
-    <main>  
+    <main>
       <Container>
-      <Intro />
+        <Intro />
         <article className="mb-32">
           <PostHeader
             title={post.title}
             coverImage={post.coverImage}
-            date={post.date}                 
+            date={post.date}
           />
-          <PostBody content={content} repoLink={post.repoLink}/>
+          <PostBody
+            content={content}
+            repoLink={post.repoLink}
+          />
         </article>
       </Container>
     </main>

@@ -84,6 +84,9 @@ const Switch = () => {
     setMode(modes[(index + 1) % modes.length]);
   };
 
+  return (
+    <></>
+  )
 
   // return (
   //   <p  onClick={handleModeSwitch}>Light/Dark</p>
