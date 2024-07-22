@@ -7,7 +7,7 @@ import os
 '''
 
 
-project_name = 'metaphasic-vx'
+project_name = 'melodic-chimes'
 source_path = './public/assets/blog/' + project_name
 relative_path = '/assets/blog/' + project_name
 

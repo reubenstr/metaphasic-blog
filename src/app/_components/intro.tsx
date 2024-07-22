@@ -16,7 +16,7 @@ export function Intro() {
       <div className="flex justify-end">
         <a className="header-link" href="/about"> ABOUT </a>
         <a className="header-link" href="/contact"> CONTACT </a>
-        <a className="header-link" href="https://github.com/reubenstr"> GIT </a>
+        <a className="header-link" href="https://github.com/reubenstr"> GITHUB </a>
       </div>
       <hr className="mb-10" />
     </section>
