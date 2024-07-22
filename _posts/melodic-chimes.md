@@ -2,79 +2,146 @@
 title: "Melodic Chimes"
 excerpt: "Auto-Tuning stringed chimes using tension for pitch control."
 coverImage: "/assets/blog/melodic-chimes/melodic-chimes-cover.jpg"
-date: "2020-03-16T05:35:07.322Z"
+date: "2021-11-16T05:35:07.322Z"
 pinned: true
 ---
 
-Post coming soon!
-
-![melodic chimes pluctrum](/assets/blog/melodic-chimes/melodic-chimes-pluctrum.jpg)
-
-![melodic chimes musescore](/assets/blog/melodic-chimes/melodic-chimes-musescore.png)
-
-![melodic chimes lower bone bridge](/assets/blog/melodic-chimes/melodic-chimes-lower-bone-bridge.jpg)
-
-![melodic chimes cover](/assets/blog/melodic-chimes/melodic-chimes-cover.jpg)
-
-![melodic chimes pickup preamps](/assets/blog/melodic-chimes/melodic-chimes-pickup-preamps.jpg)
-
-![melodic chimes tuner gear steppers](/assets/blog/melodic-chimes/melodic-chimes-tuner-gear-steppers.jpg)
-
-![melodic chimes keyboard mini32 mk3](/assets/blog/melodic-chimes/melodic-chimes-keyboard-mini32-mk3.jpg)
-
-![melodic chimes back](/assets/blog/melodic-chimes/melodic-chimes-back.jpg)
-
-![melodic chimes illuminated face plate](/assets/blog/melodic-chimes/melodic-chimes-illuminated-face-plate.jpg)
-
-![melodic chimes 3d printer wall mount](/assets/blog/melodic-chimes/melodic-chimes-3d-printer-wall-mount.jpg)
-
-![melodic chimes stepper motor electronics](/assets/blog/melodic-chimes/melodic-chimes-stepper-motor-electronics.jpg)
-
-![melodic chimes teensy controller](/assets/blog/melodic-chimes/melodic-chimes-teensy-controller.jpg)
-
-![melodic chimes sd card slot](/assets/blog/melodic-chimes/melodic-chimes-sd-card-slot.jpg)
-
-![melodic chimes sound holes](/assets/blog/melodic-chimes/melodic-chimes-sound-holes.jpg)
-
-![melodic chimes main controller schematic](/assets/blog/melodic-chimes/melodic-chimes-main-controller-schematic.png)
-
-![melodic chimes pickup mounting bracket](/assets/blog/melodic-chimes/melodic-chimes-pickup-mounting-bracket.jpg)
-
-![melodic chimes mean well power supply](/assets/blog/melodic-chimes/melodic-chimes-mean-well-power-supply.jpg)
-
-![melodic chimes tuners and upper bridge](/assets/blog/melodic-chimes/melodic-chimes-tuners-and-upper-bridge.jpg)
-
-![melodic chimes guitar string single pickup](/assets/blog/melodic-chimes/melodic-chimes-guitar-string-single-pickup.jpg)
-
-![melodic chimes tft lcd display control panel](/assets/blog/melodic-chimes/melodic-chimes-tft-lcd-display-control-panel.jpg)
-
-![melodic chimes tft interface](/assets/blog/melodic-chimes/melodic-chimes-tft-interface.jpg)
+Melodic Chimes is a stringed instrument playing melodies by automatically adjusting string tension to create notes.
 
 ![melodic chimes auto tuning string midi player context](/assets/blog/melodic-chimes/melodic-chimes-auto-tuning-string-midi-player-context.jpg)
 
-![melodic chimes fusion 360 CAD 3d printed parts](/assets/blog/melodic-chimes/melodic-chimes-fusion-360-CAD-3d-printed-parts.jpg)
+Melodic Chimes is mounted to a wall and is roughly 10.5" wide by 23" tall.
+
+<!-- ![melodic chimes underview](/assets/blog/melodic-chimes/melodic-chimes-underview.jpg) -->
+
+
+![melodic chimes illuminated face plate](/assets/blog/melodic-chimes/melodic-chimes-illuminated-face-plate.jpg)
+
+The faceplate changes colors depending on the string being played.
+
+
+![melodic chimes tuners and upper bridge](/assets/blog/melodic-chimes/melodic-chimes-tuners-and-upper-bridge.jpg)
+
+The strings are wrapped around brass adapters with diameters selected to balance tuning speed and torque requirements.
+
+![melodic chimes pluctrum](/assets/blog/melodic-chimes/melodic-chimes-pluctrum.jpg)
+
+The plectrums are designed with geometry to pick the string and quickly move away with enough of a gap to prevent string buzzing. The plectums can be lowered or raised to decrease or increase the pick intensity which in turn changes the volume.
+
+![melodic chimes guitar string single pickup](/assets/blog/melodic-chimes/melodic-chimes-guitar-string-single-pickup.jpg)
+
+Custom made single coil pickups were wound using my [Coil Winder](https://metaphasiclabs.com/posts/coil-winder) to balance size and waveform intensity.
+
+![melodic chimes sound holes](/assets/blog/melodic-chimes/melodic-chimes-sound-holes.jpg)
+
+Sound holes help project the sound from the sound box and the chimes have enough volume to be audible without amplification.
+
+![melodic chimes lower bone bridge](/assets/blog/melodic-chimes/melodic-chimes-lower-bone-bridge.jpg)
+
+Bridge are made from bone to help transfer vibrations to the sound box which is mechanically isolated from the frame in an attempt to louden the chimes.
 
 ![melodic chimes power plug and switch](/assets/blog/melodic-chimes/melodic-chimes-power-plug-and-switch.jpg)
 
-![melodic chimes CAD laser cutting](/assets/blog/melodic-chimes/melodic-chimes-CAD-laser-cutting.jpg)
+Underneath contains the plug and power switch.
 
-![melodic chimes chime controller schematic](/assets/blog/melodic-chimes/melodic-chimes-chime-controller-schematic.png)
+![melodic chimes sd card slot](/assets/blog/melodic-chimes/melodic-chimes-sd-card-slot.jpg)
+
+On the side a SD card is inserted that stores MIDI files.
 
 ![melodic chimes programming slot](/assets/blog/melodic-chimes/melodic-chimes-programming-slot.jpg)
 
-![melodic chimes esp32 microcontroller and sd card slot](/assets/blog/melodic-chimes/melodic-chimes-esp32-microcontroller-and-sd-card-slot.jpg)
+This top corner view reveals a slot for a programming cable.
 
-![melodic chimes main controller pcb render](/assets/blog/melodic-chimes/melodic-chimes-main-controller-pcb-render.png)
+![melodic chimes tft lcd display control panel](/assets/blog/melodic-chimes/melodic-chimes-tft-lcd-display-control-panel.jpg)
 
-![melodic chimes read sound box](/assets/blog/melodic-chimes/melodic-chimes-read-sound-box.jpg)
+The touch display is used to select the song, change the pick volume, calibrate the strings, and more.
+
+![melodic chimes back](/assets/blog/melodic-chimes/melodic-chimes-back.jpg)
+
+The backside reveals the magic.
 
 ![melodic chimes back angled](/assets/blog/melodic-chimes/melodic-chimes-back-angled.jpg)
 
+Just an angled shot.
+
+![melodic chimes stepper motor electronics](/assets/blog/melodic-chimes/melodic-chimes-stepper-motor-electronics.jpg)
+
+The PCBs to the left and right are the chime controllers, where each controller interfaces with one or two of the tuning steppers, picking steppers, the volume steppers. They also process the signals generated by the pickup coils
+
+![melodic chimes teensy controller](/assets/blog/melodic-chimes/melodic-chimes-teensy-controller.jpg)
+
+The Teensy 3.2's are responsible for converting the pickup coil's signals into freqencies which in turn is fed into a p-controller that controls the tension stepper to match the string's vibration frequency to the desired note frequency.
+
+![melodic chimes pickup preamps](/assets/blog/melodic-chimes/melodic-chimes-pickup-preamps.jpg)
+
+The LM358 op-amps amplify the pickup coil signals to a voltage level the Teensy is capable of processing.
+
+![melodic chimes tuner gear steppers](/assets/blog/melodic-chimes/melodic-chimes-tuner-gear-steppers.jpg)
+
+Three 5:1 gear head NEMA 17 stepper motors are used to provide enough torque to tune the strings which require 2LBS to 12LBS of tension.
+
 ![melodic chimes auto picker and volume position steppers](/assets/blog/melodic-chimes/melodic-chimes-auto-picker-and-volume-position-steppers.jpg)
+
+The plectums are powered by NEMA 14 steppers that are decently small and provided smooth and silent rotation. The plectum hoppers are spring loaded and rise and fall using the round steppers.
+
+![melodic chimes pickup mounting bracket](/assets/blog/melodic-chimes/melodic-chimes-pickup-mounting-bracket.jpg)
+
+The pickup coils are bottom mounted to this cross bar.
+
+![melodic chimes read sound box](/assets/blog/melodic-chimes/melodic-chimes-read-sound-box.jpg)
+
+The sound box is just that, a box. The four machine bolts can be removed to isolate the sound box from the frame since the box is glued to the horizontal mounting bracket with a neoprene interface.
+
+![melodic chimes tft interface](/assets/blog/melodic-chimes/melodic-chimes-tft-interface.jpg)
+
+The main controller is a ESP32 Dev. Kit V1. A future firmware update will use the WiFi to fetch network time so the chimes can play on the hour.
+
+![melodic chimes esp32 microcontroller and sd card slot](/assets/blog/melodic-chimes/melodic-chimes-esp32-microcontroller-and-sd-card-slot.jpg)
+
+The SD card slot is a generic break out module connected to the main PCB.
+
+![melodic chimes mean well power supply](/assets/blog/melodic-chimes/melodic-chimes-mean-well-power-supply.jpg)
+
+A Mean Well LRS-50-12 power supply provides more than enough power.
+
+![melodic chimes main controller schematic](/assets/blog/melodic-chimes/melodic-chimes-main-controller-schematic.png)
+
+The main PCB schematic is straight forward using mostly premade modules to reduce the time to design and assemble.
+
+![melodic chimes chime controller schematic](/assets/blog/melodic-chimes/melodic-chimes-chime-controller-schematic.png)
+
+The Chime Controllers are also straight forward but with more bypass capacitors that are required to reduce noise on the pickup coil lines due to the close by stepper motors.
+
+![melodic chimes main controller pcb render](/assets/blog/melodic-chimes/melodic-chimes-main-controller-pcb-render.png)
+
+The PCBs were created using DipTrace...
 
 ![melodic chimes chime controller pcb render](/assets/blog/melodic-chimes/melodic-chimes-chime-controller-pcb-render.png)
 
-![melodic chimes corner bracket](/assets/blog/melodic-chimes/melodic-chimes-corner-bracket.jpg)
+...and fabricated using JLCPCB.
 
-![melodic chimes underview](/assets/blog/melodic-chimes/melodic-chimes-underview.jpg)
+![melodic chimes musescore](/assets/blog/melodic-chimes/melodic-chimes-musescore.png)
 
+Musescore 3 was used to compose a few melodies using three instruments, one for each string.
+
+![melodic chimes keyboard mini32 mk3](/assets/blog/melodic-chimes/melodic-chimes-keyboard-mini32-mk3.jpg)
+
+An inexpensive MIDI keyboard was a significant help the composition process.
+
+![melodic chimes CAD laser cutting](/assets/blog/melodic-chimes/melodic-chimes-CAD-laser-cutting.jpg)
+
+Faceplates, brackets, and the sound box was cut from 3mm acrylic and wood using a laser engraver. Parts were designed in AutoCAD.
+
+![melodic chimes fusion 360 CAD 3d printed parts](/assets/blog/melodic-chimes/melodic-chimes-fusion-360-CAD-3d-printed-parts.jpg)
+
+3D printed parts were printed in PLA and modeled using Fusion 360.
+
+![melodic chimes 3d printer wall mount](/assets/blog/melodic-chimes/melodic-chimes-3d-printer-wall-mount.jpg)
+
+The wall mounting bracket is sturdy and allows the use of a drywall screw for peace of mind.
+
+---
+
+Ok, that it, I hope you liked this project, it's in my top three favorite projects. This was a Covid pandemic project that helped learn new skills and stay sharp. 
+
+<!-- ![melodic chimes corner bracket](/assets/blog/melodic-chimes/melodic-chimes-corner-bracket.jpg) -->
