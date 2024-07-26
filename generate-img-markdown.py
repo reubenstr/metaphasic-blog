@@ -7,7 +7,7 @@ import os
 '''
 
 
-project_name = 'melodic-chimes'
+project_name = 'river-conditions'
 source_path = './public/assets/blog/' + project_name
 relative_path = '/assets/blog/' + project_name
 

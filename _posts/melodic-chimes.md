@@ -4,6 +4,7 @@ excerpt: "Auto-Tuning stringed chimes using tension for pitch control."
 coverImage: "/assets/blog/melodic-chimes/melodic-chimes-cover.jpg"
 date: "2021-11-16T05:35:07.322Z"
 pinned: true
+repoLink: https://github.com/reubenstr/MelodicChimes
 ---
 
 Melodic Chimes is a stringed instrument playing melodies by automatically adjusting string tension to create notes.
@@ -142,6 +143,6 @@ The wall mounting bracket is sturdy and allows the use of a drywall screw for pe
 
 ---
 
-Ok, that it, I hope you liked this project, it's in my top three favorite projects. This was a Covid pandemic project that helped learn new skills and stay sharp. 
+I hope you liked this project, it's in my top favorite projects. As a Covid pandemic project, I learned new skills and stayed sharp. 
 
 <!-- ![melodic chimes corner bracket](/assets/blog/melodic-chimes/melodic-chimes-corner-bracket.jpg) -->
