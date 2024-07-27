@@ -1,9 +1,9 @@
 ---
 title: "Thermixels"
-excerpt: "Pixels created from heat."
+excerpt: "Pixels created from heat"
 coverImage: "/assets/blog/thermixels/thermixels-cover.jpg"
 date: "2024-04-01T00:00:00.000Z"
-pinned: false
+pinned: true
 repoLink: "https://github.com/reubenstr/Thermixels"
 ---
 

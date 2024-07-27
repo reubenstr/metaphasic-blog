@@ -3,7 +3,7 @@ title: "River Conditions"
 excerpt: "James River water conditions dashboard"
 coverImage: "/assets/blog/river-conditions/river-conditions-cover.jpg"
 date: "2020-07-05T00:00:00.000Z"
-pinned: false
+pinned: true
 repoLink: https://github.com/reubenstr/RiverConditions
 ---
 

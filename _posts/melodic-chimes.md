@@ -1,8 +1,8 @@
 ---
 title: "Melodic Chimes"
-excerpt: "Auto-Tuning stringed chimes using tension for pitch control."
+excerpt: "Auto-Tuning stringed chimes using tension for pitch control"
 coverImage: "/assets/blog/melodic-chimes/melodic-chimes-cover.jpg"
-date: "2021-11-16T05:35:07.322Z"
+date: "2021-11-16T05:00:00.000Z"
 pinned: true
 repoLink: https://github.com/reubenstr/MelodicChimes
 ---

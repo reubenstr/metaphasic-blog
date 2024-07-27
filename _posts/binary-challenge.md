@@ -1,6 +1,6 @@
 ---
 title: "Binary Challenge"
-excerpt: "A game to test binary conversion skill."
+excerpt: "A game to test binary conversion skill"
 coverImage: "/assets/blog/binary-challenge/binary-challenge-cover.jpg"
 date: "2021-01-01T00:00:00.000Z"
 pinned: false

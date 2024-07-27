@@ -1,6 +1,6 @@
 ---
 title: "Quote Bot"
-excerpt: "Desktop stock quote bot."
+excerpt: "Desktop stock quote bot"
 coverImage: "/assets/blog/quote-bot/quote-bot-cover.jpg"
 date: "2021-04-01T00:00:00.000Z"
 pinned: false

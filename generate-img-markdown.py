@@ -7,7 +7,7 @@ import os
 '''
 
 
-project_name = 'quote-bot'
+project_name = 'remeder'
 source_path = './public/assets/blog/' + project_name
 relative_path = '/assets/blog/' + project_name
 

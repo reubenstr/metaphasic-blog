@@ -1,9 +1,10 @@
 ---
 title: "Metaphasic VX"
-excerpt: "The Metaphasic-VX Encabulator Monitoring & Control System's primary goal is not to explode in a shower of sparks."
+excerpt: "The Metaphasic-VX Encabulator Monitoring & Control System's primary goal is not to explode in a shower of sparks"
 coverImage: "/assets/blog/metaphasic-vx/metaphasic-vx-encabulator-monitoring-and-control-system-cover.jpg"
 date: "2020-03-16T05:35:07.322Z"
-pinned: true
+pinned: false
+repoLink: "https://github.com/reubenstr/Metaphasic-VX/"
 ---
 
 ![metaphasic vx encabulator monitoring and control system cpu core](/assets/blog/metaphasic-vx/metaphasic-vx-encabulator-monitoring-and-control-system-cpu-core.jpg)
