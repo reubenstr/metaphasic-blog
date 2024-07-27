@@ -1,4 +1,4 @@
-# Metaphasic Labs Blog
+# Metahasic Labs Blog
 
 Uses NextJS, remark, tailwind, and more to create a static website.
 

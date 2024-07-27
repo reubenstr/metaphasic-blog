@@ -7,9 +7,9 @@ const Contact = () => {
     <main>
       <Container>
         <Intro />
-        <article className="mb-16">
-          Contact page, coming soon!
-        </article>
+        <div className="flex justify-center">      
+          Contact via email through: reuben stranglove at gmail dot com      
+        </div>
       </Container>
     </main>
   );  
