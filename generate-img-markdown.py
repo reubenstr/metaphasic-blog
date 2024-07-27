@@ -7,7 +7,7 @@ import os
 '''
 
 
-project_name = 'river-conditions'
+project_name = 'quote-bot'
 source_path = './public/assets/blog/' + project_name
 relative_path = '/assets/blog/' + project_name
 
