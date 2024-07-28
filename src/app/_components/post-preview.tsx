@@ -17,12 +17,12 @@ export function PostPreview({
 }: Props) {
   return (
     <div>
-        <h3 className="text-2xl mb-3 leading-snug">
+        <h3 className="text-2xl leading-snug md:mb-3 sm:mb-1">
         <Link href={`/posts/${slug}`} className="hover:underline">
           {title}
         </Link>
       </h3>
-      <div className="mb-5">
+      <div className="md:mb-4 sm:mb-2">
         <CoverImage slug={slug} title={title} src={coverImage} />
       </div>        
       <p className="text-lg leading-relaxed mb-4">{excerpt}</p>     

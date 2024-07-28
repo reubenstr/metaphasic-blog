@@ -1,5 +1,5 @@
 ---
-title: "4-bit Adder"
+title: "An educational and interactive 4-bit adder"
 excerpt: "4-bit Adder"
 coverImage: "/assets/blog/4-bit-adder/4-bit-adder-cover.jpg"
 date: "2020-10-01T00:00:00.000Z"

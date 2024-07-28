@@ -7,7 +7,7 @@ import os
 '''
 
 
-project_name = '4-bit-adder'
+project_name = 'zuko'
 source_path = './public/assets/blog/' + project_name
 relative_path = '/assets/blog/' + project_name
 

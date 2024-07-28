@@ -9,7 +9,7 @@ export function Intro() {
             Metaphasic Labs
           </Link>
         </h1>
-        <h4 className="mt-5">
+        <h4 className="mt-1">
           A Visual Project Log
         </h4>
       </section>

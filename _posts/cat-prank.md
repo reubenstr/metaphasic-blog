@@ -1,6 +1,6 @@
 ---
 title: "Cat Prank"
-excerpt: "Meows gently then when found snarls loudly for a jump scare."
+excerpt: "Meows gently then when found snarls loudly for a jump scare"
 coverImage: "/assets/blog/cat-prank/cat-prank-cover.jpg"
 date: "2019-09-15T00:00:00.000Z"
 pinned: false

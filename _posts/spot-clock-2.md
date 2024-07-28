@@ -1,5 +1,5 @@
 ---
-title: "SpotClock2"
+title: "Spot Clock 2"
 excerpt: "Live metals prices"
 coverImage: "/assets/blog/spot-clock-2/spot-clock-2-cover.jpg"
 date: "2021-04-15T00:00:00.000Z"

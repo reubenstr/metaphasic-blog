@@ -1,6 +1,6 @@
 ---
 title: "Infrared Mirror"
-excerpt: "A mirror to see your thermal energy."
+excerpt: "A mirror to see your thermal energy"
 coverImage: "/assets/blog/infrared-mirror/infrared-mirror-cover.jpg"
 date: "2021-01-01T00:00:00.000Z"
 pinned: false
