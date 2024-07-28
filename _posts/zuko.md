@@ -9,7 +9,7 @@ repoLink: "https://github.com/reubenstr/zuko"
 
 Zuko is a quadruped robot dog inspired by such dogs like Spot Mini Mini and Baris Alp's Kangel.
 
-Although Zuko is an incomplete project, I wanted to share him with everyone hopfully inspiring others to explore making their own robot dogs.
+Although Zuko is an incomplete project, I wanted to share him hopefully inspiring others to explore making their own robot dogs.
 
 
 ![zuko robot dog motion test](/assets/blog/zuko/videos/zuko-v2.1-first-time-standing-kinematics-test.mp4)
@@ -20,9 +20,11 @@ This is a video of the found of kinematics tests - a good start!
 
 Every printed part was designed using Fushion 360 with the goal of minimizing frame size, part count, and keeping a sense of aesthetics all while keeping the parts simple to print. All the parts are printed in ABS but in retrospect I would of tried PETG for easier printing and better dimensional stability.
 
+Total assembled weight (frame, motors, electronics, and batteries) is about 2.2kg.
+
 ![zuko mini australian shepard](/assets/blog/zuko/zuko-mini-australian-shepard.jpg)
 
-This is Zuko, a Australian shepherd. The story is over the Covod 19 pandemic, my girlfriend wanted a puppy and found a beautiful black tri Australian shepherd. During our trip to pick her up Zuko was also available and I thought here was my chance to also have my own puppy - I was quickly denied. She made a strong case that Australian shepherds need large amounts of attention and activity but I being a typical engineer tend to fall into projects with the rest of world going unnoticed. I reluctantly agree and went with the best second option, building my own puppy!
+This is Zuko, a Australian shepherd. Over the Covid 19 pandemic my girlfriend wanted a puppy and found a beautiful black tri Australian Shepherd. While picking her up Zuko also available was a spunky brown tri (Zuko) and I thought this was my chance to also have my own puppy - I was summarily denied by girlfriend. She made a strong case that Australian Shepherds need large amounts of attention and activity but I being a typical engineer tend to fall into projects with the rest of world going unnoticed. I reluctantly agree and went with the best second option, building my own puppy!
 
 ![zuko v2](/assets/blog/zuko/zuko-v2.1-robot-dog-legs-assembled.jpg)
 
@@ -54,7 +56,9 @@ A custom expansion board was created using KiCad that connected directly to the 
 
 <hr />
 
-The control software uses ROS2 which at the time was a relatively new release and not as adopted. Therefore, some challenges were faced such as updating the PS4 controller driver. Use the link below for all the kinematics simulation code, ROS source code, PCBs design files, and more.
+The control software uses ROS 2 which at the time was a relatively new release and not as adopted. Therefore, some challenges were faced such as updating the PS4 controller driver and general lack of community discussion. 
+
+The link at the end of this power contains all the kinematics simulation code, ROS 2 modules source code, PCBs design files, and more.
 
 ![zuko robot dog motion test](/assets/blog/zuko/videos/zuko-v2.1-defending-himself-against-sydney.mp4)
 
@@ -62,5 +66,4 @@ Here is Syndey and Zuko meeting each other for the first time.
 
 <hr />
 
-Being an incomplete project I don't have much more pictures to show, hopefully I swing back to this project in the future.
-
+Being an incomplete project I don't have much more pictures to show, hopefully I will swing back to this project in the future.
