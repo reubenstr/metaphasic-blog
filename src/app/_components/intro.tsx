@@ -13,11 +13,13 @@ export function Intro() {
           A Visual Project Log
         </h4>
       </section>
-      <div className="flex justify-end">
-        <a className="header-link" href="/about"> ABOUT </a>
-        <a className="header-link" href="/contact"> CONTACT </a>
-        <a className="header-link" href="https://github.com/reubenstr"> GITHUB </a>
-      </div>
+      <section className="mt-8 md:mt-2 sm:mt-2">
+        <div className="flex justify-end">
+          <a className="header-link" href="/about"> ABOUT </a>
+          <a className="header-link" href="/contact"> CONTACT </a>
+          <a className="header-link" href="https://github.com/reubenstr"> GITHUB </a>
+        </div>
+      </section>
       <hr className="mb-10" />
     </section>
   );
