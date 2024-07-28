@@ -58,7 +58,7 @@ A custom expansion board was created using KiCad that connected directly to the 
 
 The control software uses ROS 2 which at the time was a relatively new release and not as adopted. Therefore, some challenges were faced such as updating the PS4 controller driver and general lack of community discussion. 
 
-The link at the end of this power contains all the kinematics simulation code, ROS 2 modules source code, PCBs design files, and more.
+The link at the end of this power contains all the kinematics simulation code, ROS 2 modules source code, PCBs design files, assembly pictures, and more.
 
 ![zuko robot dog motion test](/assets/blog/zuko/videos/zuko-v2.1-defending-himself-against-sydney.mp4)
 
