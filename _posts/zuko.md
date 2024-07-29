@@ -14,7 +14,7 @@ Although Zuko is an incomplete project, I wanted to share him hopefully inspirin
 
 ![zuko robot dog motion test](/assets/blog/zuko/videos/zuko-v2.1-first-time-standing-kinematics-test.mp4)
 
-This is a video of the found of kinematics tests - a good start!
+This is a video of the first full inverse kinematics test - a bit clunky, but a good start!
 
 ![zuko v2](/assets/blog/zuko/zuko-v2.1-printed-parts-exploded.jpg)
 
