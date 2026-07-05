@@ -35,13 +35,13 @@ const { title, description, pubDate, updatedDate, heroImage, repoLink } =
 				flex-direction: column;
 			}
 			.left-column .right .row-top {
-				flex: 0.85;
+				flex: 1;
 				border-bottom-left-radius: var(--border-radius);
 				border-left: var(--border-width) solid var(--border-color);
 				border-bottom: var(--border-width) solid var(--border-color);
 			}
 			.left-column .right .row-bottom {
-				flex: 0.15;
+				height: 3em
 			}
 			.center-column {
 				display: flex;
@@ -59,33 +59,33 @@ const { title, description, pubDate, updatedDate, heroImage, repoLink } =
 				flex-direction: column;
 			}
 			.right-column .left .row-top {
-				flex: 0.35;
+				flex: 0.55;
 			}
 			.right-column .left .row-middle {
-				flex: 0.5;
+				flex: 0.45;
 				border-top-right-radius: var(--border-radius);
 				border-bottom-right-radius: var(--border-radius);
 				border-top: var(--border-width) solid var(--border-color);
 				border-right: var(--border-width) solid var(--border-color);
-				border-bottom: var(--border-width) solid var(--border-color);
+				border-bottom: var(--border-width) solid var(--border-color);			
 			}
 			.right-column .left .row-bottom {
-				flex: 0.15;
+				height: 3em;
 			}
 			.right-column .right {
 				display: flex;
 				flex: 1;
 			}
-
 			.hero-image {
 				margin: 0;
-				max-width: 100%;				
+				max-width: 100%;						
 			}
 			.hero-image img {
 				display: block;
 				box-sizing: border-box;
 				width: 100%;
 				height: auto;
+				max-height: 640px;	
 				margin: 2em 0 0 0;
 				box-shadow: var(--box-shadow);
 			}
@@ -101,6 +101,7 @@ const { title, description, pubDate, updatedDate, heroImage, repoLink } =
 			}
 			.title h1 {
 				margin: 0;
+				font-size: clamp(1.5rem, 4vw + 1rem, 2.5rem);
 			}
 			.date {
 				margin-bottom: 0.5em;
