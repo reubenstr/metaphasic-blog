@@ -6,9 +6,20 @@ import Footer from '../../components/Footer.astro';
 import Header from '../../components/Header.astro';
 import { SITE_DESCRIPTION, SITE_TITLE } from '../../consts';
 
-const posts = (await getCollection('blog')).sort(
-	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
-);
+const featuredOrder = ['zuko', 'melodic-chimes', 'thermixels', 'metaphasic-vx'];
+
+const posts = (await getCollection('blog')).sort((a, b) => {
+	const aFeatured = featuredOrder.indexOf(a.id);
+	const bFeatured = featuredOrder.indexOf(b.id);
+
+	if (aFeatured !== -1 || bFeatured !== -1) {
+		if (aFeatured === -1) return 1;
+		if (bFeatured === -1) return -1;
+		return aFeatured - bFeatured;
+	}
+
+	return b.data.pubDate.valueOf() - a.data.pubDate.valueOf();
+});
 ---
 
 <!doctype html>

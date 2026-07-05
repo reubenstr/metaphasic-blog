@@ -1,8 +1,12 @@
 ---
+interface Props {
+	height?: string;
+}
 
+const { height = '2em' } = Astro.props;
 ---
 
-<div class="row">
+<div class="row" style={`height: ${height}`}>
 	<div class="spacer"></div>
 	<div class="connector"></div>
 	<div class="spacer"></div>
@@ -12,7 +16,6 @@
 	.row {
 		display: flex;
 		flex-direction: row;
-		height: 1.5em;
 	}
 	.row .spacer {
 		flex: 1;

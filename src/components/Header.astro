@@ -109,6 +109,11 @@ const isActive = (...hrefs: string[]) =>
 		border-radius: var(--border-radius);
 		text-decoration: none;
 		border: var(--border-width) solid var(--border-color);
+		transition: background-color 0.2s, color 0.2s;
+	}
+	nav a:hover {
+		color: var(--bg);
+		background-color: var(--fg);
 	}
 	nav a.active {
 		color: var(--bg);
