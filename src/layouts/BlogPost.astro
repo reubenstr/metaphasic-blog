@@ -21,6 +21,16 @@ const { title, description, pubDate, updatedDate, heroImage, repoLink } =
 				display: flex;
 				flex-direction: column;
 			}
+			.divider-row {
+				display: flex;
+				align-items: center;
+			}
+			.divider-row .spacer-left {
+				flex: 0.75;
+			}
+			.divider-row .spacer-right {
+				flex: 0.25;
+			}
 			.hero-image {
 				width: 720px;
 				max-width: calc(100% - 2em);
@@ -92,7 +102,11 @@ const { title, description, pubDate, updatedDate, heroImage, repoLink } =
 								/>
 							)
 						}
-						<TopVerticalLine height="2em" />
+						<div class="divider-row">
+							<div class="spacer-left"></div>
+							<TopVerticalLine height="2em" />
+							<div class="spacer-right"></div>
+						</div>
 						<div class="title">
 							<div class="date">
 								<FormattedDate date={pubDate} />
