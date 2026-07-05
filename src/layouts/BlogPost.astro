@@ -5,7 +5,6 @@ import BaseHead from '../components/BaseHead.astro';
 import Footer from '../components/Footer.astro';
 import FormattedDate from '../components/FormattedDate.astro';
 import Header from '../components/Header.astro';
-import TopVerticalLine from '../components/TopVerticalLine.astro';
 
 type Props = CollectionEntry<'blog'>['data'] & { repoLink?: string };
 
@@ -19,41 +18,86 @@ const { title, description, pubDate, updatedDate, heroImage, repoLink } =
 		<style>
 			.container {
 				display: flex;
+				flex-direction: row;
+			}
+			.left-column {
+				display: flex;
+				flex: 0.25;
+				flex-direction: row;
+			}
+			.left-column .left {
+				display: flex;
+				flex: 1;
+			}
+			.left-column .right {
+				display: flex;
+				flex: 1;
 				flex-direction: column;
 			}
-			.divider-row {
+			.left-column .right .row-top {
+				flex: 0.85;
+				border-bottom-left-radius: var(--border-radius);
+				border-left: var(--border-width) solid var(--border-color);
+				border-bottom: var(--border-width) solid var(--border-color);
+			}
+			.left-column .right .row-bottom {
+				flex: 0.15;
+			}
+			.center-column {
 				display: flex;
-				align-items: center;
+				flex: 0.5;
+				flex-direction: column;
 			}
-			.divider-row .spacer-left {
-				flex: 0.75;
-			}
-			.divider-row .spacer-right {
+			.right-column {
+				display: flex;
 				flex: 0.25;
+				flex-direction: row;
 			}
+			.right-column .left {
+				display: flex;
+				flex: 1;
+				flex-direction: column;
+			}
+			.right-column .left .row-top {
+				flex: 0.35;
+			}
+			.right-column .left .row-middle {
+				flex: 0.5;
+				border-top-right-radius: var(--border-radius);
+				border-bottom-right-radius: var(--border-radius);
+				border-top: var(--border-width) solid var(--border-color);
+				border-right: var(--border-width) solid var(--border-color);
+				border-bottom: var(--border-width) solid var(--border-color);
+			}
+			.right-column .left .row-bottom {
+				flex: 0.15;
+			}
+			.right-column .right {
+				display: flex;
+				flex: 1;
+			}
+
 			.hero-image {
-				width: 720px;
-				max-width: calc(100% - 2em);
-				margin: 0 auto;
+				margin: 0;
+				max-width: 100%;				
 			}
 			.hero-image img {
 				display: block;
-				margin: 0 auto;
-				border-radius: var(--border-radius);
-				border: var(--border-width) solid var(--border-color);
-			}
-			.prose {
-				padding: 1em;
-				margin-bottom: 3em;
+				box-sizing: border-box;
+				width: 100%;
+				height: auto;
+				margin: 2em 0 0 0;
+				box-shadow: var(--box-shadow);
 			}
 			.title {
-				margin-bottom: 1em;
+				margin-top: 2em;
 				padding: 1em 0;
 				text-align: center;
 				line-height: 1;
 				font-family: var(--font-orbitron);
 				border-radius: var(--border-radius);
 				border: var(--border-width) solid var(--border-color);
+				box-shadow: var(--box-shadow);
 			}
 			.title h1 {
 				margin: 0;
@@ -64,6 +108,10 @@ const { title, description, pubDate, updatedDate, heroImage, repoLink } =
 			}
 			.last-updated-on {
 				font-style: italic;
+			}
+			.prose {
+				padding: 1em;
+				margin-bottom: 3em;
 			}
 			.repo-link-wrapper {
 				text-align: center;
@@ -90,22 +138,16 @@ const { title, description, pubDate, updatedDate, heroImage, repoLink } =
 		<main>
 			<article>
 				<div class="container">
-					<TopVerticalLine height="2em" />
-					<div class="hero-image">
-						{
-							heroImage && (
-								<Image
-									width={1020}
-									height={510}
-									src={heroImage}
-									alt=""
-								/>
-							)
-						}
-						<div class="divider-row">
-							<div class="spacer-left"></div>
-							<TopVerticalLine height="2em" />
-							<div class="spacer-right"></div>
+					<div class="left-column">
+						<div class="left"></div>
+						<div class="right">
+							<div class="row-top"></div>
+							<div class="row-bottom"></div>
+						</div>
+					</div>
+					<div class="center-column">
+						<div class="hero-image">
+							{heroImage && <Image src={heroImage} alt="" />}
 						</div>
 						<div class="title">
 							<div class="date">
@@ -121,6 +163,14 @@ const { title, description, pubDate, updatedDate, heroImage, repoLink } =
 							</div>
 							<h1>{title}</h1>
 						</div>
+					</div>
+					<div class="right-column">
+						<div class="left">
+							<div class="row-top"></div>
+							<div class="row-middle"></div>
+							<div class="row-bottom"></div>
+						</div>
+						<div class="right"></div>
 					</div>
 				</div>
 				<div class="prose">

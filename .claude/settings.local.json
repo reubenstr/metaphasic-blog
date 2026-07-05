@@ -3,7 +3,9 @@
     "allow": [
       "Bash(rm -f /tmp/theme-light.png /tmp/theme-toggled.png /tmp/theme-reloaded.png /tmp/theme-device-dark.png)",
       "Bash(curl -s http://localhost:4321/blog/ -o /dev/null -w \"%{http_code}\\\\n\")",
-      "Bash(npx astro *)"
+      "Bash(npx astro *)",
+      "Bash(curl -s http://localhost:4321/)",
+      "Bash(google-chrome --headless --disable-gpu --no-sandbox --screenshot=/tmp/claude-1000/-home-pc-Desktop-projects-metaphasic-blog/11a56ed7-dc48-425e-af88-dad37d1b59f2/scratchpad/hero-after.png --window-size=1400,1600 \"http://localhost:4321/blog/4-bit-adder/\")"
     ],
     "additionalDirectories": [
       "/tmp"
