@@ -1,0 +1,245 @@
+---
+title: 'Melodic Chimes'
+description: 'Auto-Tuning stringed chimes using tension for pitch control'
+heroImage: '../../assets/blog/melodic-chimes/melodic-chimes-cover.jpg'
+pubDate: '2021-11-16T05:00:00.000Z'
+pinned: true
+repoLink: https://github.com/reubenstr/MelodicChimes
+---
+
+import { Image } from 'astro:assets';
+import melodicChimesAutoTuningStringMidiPlayerContext from '../../assets/blog/melodic-chimes/melodic-chimes-auto-tuning-string-midi-player-context.jpg';
+import melodicChimesIlluminatedFacePlate from '../../assets/blog/melodic-chimes/melodic-chimes-illuminated-face-plate.jpg';
+import melodicChimesTunersAndUpperBridge from '../../assets/blog/melodic-chimes/melodic-chimes-tuners-and-upper-bridge.jpg';
+import melodicChimesPluctrum from '../../assets/blog/melodic-chimes/melodic-chimes-pluctrum.jpg';
+import melodicChimesGuitarStringSinglePickup from '../../assets/blog/melodic-chimes/melodic-chimes-guitar-string-single-pickup.jpg';
+import melodicChimesSoundHoles from '../../assets/blog/melodic-chimes/melodic-chimes-sound-holes.jpg';
+import melodicChimesLowerBoneBridge from '../../assets/blog/melodic-chimes/melodic-chimes-lower-bone-bridge.jpg';
+import melodicChimesPowerPlugAndSwitch from '../../assets/blog/melodic-chimes/melodic-chimes-power-plug-and-switch.jpg';
+import melodicChimesSdCardSlot from '../../assets/blog/melodic-chimes/melodic-chimes-sd-card-slot.jpg';
+import melodicChimesProgrammingSlot from '../../assets/blog/melodic-chimes/melodic-chimes-programming-slot.jpg';
+import melodicChimesTftLcdDisplayControlPanel from '../../assets/blog/melodic-chimes/melodic-chimes-tft-lcd-display-control-panel.jpg';
+import melodicChimesBack from '../../assets/blog/melodic-chimes/melodic-chimes-back.jpg';
+import melodicChimesBackAngled from '../../assets/blog/melodic-chimes/melodic-chimes-back-angled.jpg';
+import melodicChimesStepperMotorElectronics from '../../assets/blog/melodic-chimes/melodic-chimes-stepper-motor-electronics.jpg';
+import melodicChimesTeensyController from '../../assets/blog/melodic-chimes/melodic-chimes-teensy-controller.jpg';
+import melodicChimesPickupPreamps from '../../assets/blog/melodic-chimes/melodic-chimes-pickup-preamps.jpg';
+import melodicChimesTunerGearSteppers from '../../assets/blog/melodic-chimes/melodic-chimes-tuner-gear-steppers.jpg';
+import melodicChimesAutoPickerAndVolumePositionSteppers from '../../assets/blog/melodic-chimes/melodic-chimes-auto-picker-and-volume-position-steppers.jpg';
+import melodicChimesPickupMountingBracket from '../../assets/blog/melodic-chimes/melodic-chimes-pickup-mounting-bracket.jpg';
+import melodicChimesReadSoundBox from '../../assets/blog/melodic-chimes/melodic-chimes-read-sound-box.jpg';
+import melodicChimesTftInterface from '../../assets/blog/melodic-chimes/melodic-chimes-tft-interface.jpg';
+import melodicChimesEsp32MicrocontrollerAndSdCardSlot from '../../assets/blog/melodic-chimes/melodic-chimes-esp32-microcontroller-and-sd-card-slot.jpg';
+import melodicChimesMeanWellPowerSupply from '../../assets/blog/melodic-chimes/melodic-chimes-mean-well-power-supply.jpg';
+import melodicChimesMainControllerSchematic from '../../assets/blog/melodic-chimes/melodic-chimes-main-controller-schematic.png';
+import melodicChimesChimeControllerSchematic from '../../assets/blog/melodic-chimes/melodic-chimes-chime-controller-schematic.png';
+import melodicChimesMainControllerPcbRender from '../../assets/blog/melodic-chimes/melodic-chimes-main-controller-pcb-render.png';
+import melodicChimesChimeControllerPcbRender from '../../assets/blog/melodic-chimes/melodic-chimes-chime-controller-pcb-render.png';
+import melodicChimesMusescore from '../../assets/blog/melodic-chimes/melodic-chimes-musescore.png';
+import melodicChimesKeyboardMini32Mk3 from '../../assets/blog/melodic-chimes/melodic-chimes-keyboard-mini32-mk3.jpg';
+import melodicChimesCadLaserCutting from '../../assets/blog/melodic-chimes/melodic-chimes-CAD-laser-cutting.jpg';
+import melodicChimesFusion360Cad3dPrintedParts from '../../assets/blog/melodic-chimes/melodic-chimes-fusion-360-CAD-3d-printed-parts.jpg';
+import melodicChimes3dPrinterWallMount from '../../assets/blog/melodic-chimes/melodic-chimes-3d-printer-wall-mount.jpg';
+
+Melodic Chimes is a stringed instrument playing melodies by automatically adjusting string tension to create notes.
+
+<Image
+	src={melodicChimesAutoTuningStringMidiPlayerContext}
+	alt="melodic chimes auto tuning string midi player context"
+/>
+
+Melodic Chimes is mounted to a wall and is roughly 10.5" wide by 23" tall.
+
+<Image
+	src={melodicChimesIlluminatedFacePlate}
+	alt="melodic chimes illuminated face plate"
+/>
+
+The faceplate changes colors depending on the string being played.
+
+<Image
+	src={melodicChimesTunersAndUpperBridge}
+	alt="melodic chimes tuners and upper bridge"
+/>
+
+The strings are wrapped around brass adapters with diameters selected to balance tuning speed and torque requirements.
+
+<Image src={melodicChimesPluctrum} alt="melodic chimes pluctrum" />
+
+The plectrums are designed with geometry to pick the string and quickly move away with enough of a gap to prevent string buzzing. The plectums can be lowered or raised to decrease or increase the pick intensity which in turn changes the volume.
+
+<Image
+	src={melodicChimesGuitarStringSinglePickup}
+	alt="melodic chimes guitar string single pickup"
+/>
+
+Custom made single coil pickups were wound using my [Coil Winder](https://metaphasiclabs.com/posts/coil-winder) to balance size and waveform intensity.
+
+<Image src={melodicChimesSoundHoles} alt="melodic chimes sound holes" />
+
+Sound holes help project the sound from the sound box and the chimes have enough volume to be audible without amplification.
+
+<Image
+	src={melodicChimesLowerBoneBridge}
+	alt="melodic chimes lower bone bridge"
+/>
+
+Bridge are made from bone to help transfer vibrations to the sound box which is mechanically isolated from the frame in an attempt to louden the chimes.
+
+<Image
+	src={melodicChimesPowerPlugAndSwitch}
+	alt="melodic chimes power plug and switch"
+/>
+
+Underneath contains the plug and power switch.
+
+<Image src={melodicChimesSdCardSlot} alt="melodic chimes sd card slot" />
+
+On the side a SD card is inserted that stores MIDI files.
+
+<Image
+	src={melodicChimesProgrammingSlot}
+	alt="melodic chimes programming slot"
+/>
+
+This top corner view reveals a slot for a programming cable.
+
+<Image
+	src={melodicChimesTftLcdDisplayControlPanel}
+	alt="melodic chimes tft lcd display control panel"
+/>
+
+The touch display is used to select the song, change the pick volume, calibrate the strings, and more.
+
+<Image src={melodicChimesBack} alt="melodic chimes back" />
+
+The backside reveals the magic.
+
+<Image src={melodicChimesBackAngled} alt="melodic chimes back angled" />
+
+Just an angled shot.
+
+<Image
+	src={melodicChimesStepperMotorElectronics}
+	alt="melodic chimes stepper motor electronics"
+/>
+
+The PCBs to the left and right are the chime controllers, where each controller interfaces with one or two of the tuning steppers, picking steppers, the volume steppers. They also process the signals generated by the pickup coils
+
+<Image
+	src={melodicChimesTeensyController}
+	alt="melodic chimes teensy controller"
+/>
+
+The Teensy 3.2's are responsible for converting the pickup coil's signals into freqencies which in turn is fed into a p-controller that controls the tension stepper to match the string's vibration frequency to the desired note frequency.
+
+<Image src={melodicChimesPickupPreamps} alt="melodic chimes pickup preamps" />
+
+The LM358 op-amps amplify the pickup coil signals to a voltage level the Teensy is capable of processing.
+
+<Image
+	src={melodicChimesTunerGearSteppers}
+	alt="melodic chimes tuner gear steppers"
+/>
+
+Three 5:1 gear head NEMA 17 stepper motors are used to provide enough torque to tune the strings which require 2LBS to 12LBS of tension.
+
+<Image
+	src={melodicChimesAutoPickerAndVolumePositionSteppers}
+	alt="melodic chimes auto picker and volume position steppers"
+/>
+
+The plectums are powered by NEMA 14 steppers that are decently small and provided smooth and silent rotation. The plectum hoppers are spring loaded and rise and fall using the round steppers.
+
+<Image
+	src={melodicChimesPickupMountingBracket}
+	alt="melodic chimes pickup mounting bracket"
+/>
+
+The pickup coils are bottom mounted to this cross bar.
+
+<Image src={melodicChimesReadSoundBox} alt="melodic chimes read sound box" />
+
+The sound box is just that, a box. The four machine bolts can be removed to isolate the sound box from the frame since the box is glued to the horizontal mounting bracket with a neoprene interface.
+
+<Image src={melodicChimesTftInterface} alt="melodic chimes tft interface" />
+
+The main controller is a ESP32 Dev. Kit V1. A future firmware update will use the WiFi to fetch network time so the chimes can play on the hour.
+
+<Image
+	src={melodicChimesEsp32MicrocontrollerAndSdCardSlot}
+	alt="melodic chimes esp32 microcontroller and sd card slot"
+/>
+
+The SD card slot is a generic break out module connected to the main PCB.
+
+<Image
+	src={melodicChimesMeanWellPowerSupply}
+	alt="melodic chimes mean well power supply"
+/>
+
+A Mean Well LRS-50-12 power supply provides more than enough power.
+
+<Image
+	src={melodicChimesMainControllerSchematic}
+	alt="melodic chimes main controller schematic"
+/>
+
+The main PCB schematic is straight forward using mostly premade modules to reduce the time to design and assemble.
+
+<Image
+	src={melodicChimesChimeControllerSchematic}
+	alt="melodic chimes chime controller schematic"
+/>
+
+The Chime Controllers are also straight forward but with more bypass capacitors that are required to reduce noise on the pickup coil lines due to the close by stepper motors.
+
+<Image
+	src={melodicChimesMainControllerPcbRender}
+	alt="melodic chimes main controller pcb render"
+/>
+
+The PCBs were created using DipTrace...
+
+<Image
+	src={melodicChimesChimeControllerPcbRender}
+	alt="melodic chimes chime controller pcb render"
+/>
+
+...and fabricated using JLCPCB.
+
+<Image src={melodicChimesMusescore} alt="melodic chimes musescore" />
+
+Musescore 3 was used to compose a few melodies using three instruments, one for each string.
+
+<Image
+	src={melodicChimesKeyboardMini32Mk3}
+	alt="melodic chimes keyboard mini32 mk3"
+/>
+
+An inexpensive MIDI keyboard was a significant help the composition process.
+
+<Image
+	src={melodicChimesCadLaserCutting}
+	alt="melodic chimes CAD laser cutting"
+/>
+
+Faceplates, brackets, and the sound box was cut from 3mm acrylic and wood using a laser engraver. Parts were designed in AutoCAD.
+
+<Image
+	src={melodicChimesFusion360Cad3dPrintedParts}
+	alt="melodic chimes fusion 360 CAD 3d printed parts"
+/>
+
+3D printed parts were printed in PLA and modeled using Fusion 360.
+
+<Image
+	src={melodicChimes3dPrinterWallMount}
+	alt="melodic chimes 3d printer wall mount"
+/>
+
+The wall mounting bracket is sturdy and allows the use of a drywall screw for peace of mind.
+
+---
+
+I hope you liked this project, it's in my top favorite projects. As a Covid pandemic project, I learned new skills and stayed sharp.

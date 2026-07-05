@@ -1,0 +1,209 @@
+---
+title: 'RGBY-ROM'
+description: 'ROM Memory Encoded As Colored Acrylic Squares'
+heroImage: '../../assets/blog/rgby-rom/RGBY-ROM-cover.jpg'
+pubDate: '2020-12-15T05:35:07.322Z'
+pinned: true
+repoLink: 'https://github.com/reubenstr/RGBY-ROM'
+---
+
+import { Image } from 'astro:assets';
+import rgbyRomContext from '../../assets/blog/rgby-rom/RGBY-ROM-context.jpg';
+import rgbyRomRawNits from '../../assets/blog/rgby-rom/RGBY-ROM-raw-nits.jpg';
+import rgbyRomDataCartridgeUpclose from '../../assets/blog/rgby-rom/RGBY-ROM-data-cartridge-upclose.jpg';
+import rgbyRomDataCartridgeOpen from '../../assets/blog/rgby-rom/RGBY-ROM-data-cartridge-open.jpg';
+import rgbyRomDataCartridgeRearScrews from '../../assets/blog/rgby-rom/RGBY-ROM-data-cartridge-rear-screws.jpg';
+import rgbyRomCartridgeHolder from '../../assets/blog/rgby-rom/RGBY-ROM-cartridge-holder.jpg';
+import rgbyRomSensorBar from '../../assets/blog/rgby-rom/RGBY-ROM-sensor-bar.jpg';
+import rgbyRomSensorBarUpclose from '../../assets/blog/rgby-rom/RGBY-ROM-sensor-bar-upclose.jpg';
+import rgbyRomSensorBarInaction from '../../assets/blog/rgby-rom/RGBY-ROM-sensor-bar-inaction.jpg';
+import rgbyRomSwivelMount from '../../assets/blog/rgby-rom/RGBY-ROM-swivel-mount.jpg';
+import rgbyRomSensorBarPcb from '../../assets/blog/rgby-rom/RGBY-ROM-sensor-bar-pcb.jpg';
+import rgbyRomRgbAndIndicatorCloseup from '../../assets/blog/rgby-rom/RGBY-ROM-rgb-and-indicator-closeup.jpg';
+import rgbyRomMainBoardView from '../../assets/blog/rgby-rom/RGBY-ROM-main-board-view.jpg';
+import rgbyRomBlockDiagramAndDatapath from '../../assets/blog/rgby-rom/RGBY-ROM-block-diagram-and-datapath.png';
+import rgbyRomAssemblerScreenshot from '../../assets/blog/rgby-rom/RGBY-ROM-assembler-screenshot.png';
+import rgbyRomSchematicSensorBar from '../../assets/blog/rgby-rom/RGBY-ROM-schematic-sensor-bar.png';
+import rgbyRomSchematicMainBoard from '../../assets/blog/rgby-rom/RGBY-ROM-schematic-main-board.png';
+import rgbyRomElectronics from '../../assets/blog/rgby-rom/RGBY-ROM-electronics.jpg';
+import rgbyRomSensorBarRibbonCable from '../../assets/blog/rgby-rom/RGBY-ROM-sensor-bar-ribbon-cable.jpg';
+import rgbyRomWiringArea from '../../assets/blog/rgby-rom/RGBY-ROM-wiring-area.jpg';
+import rgbyRomStepper from '../../assets/blog/rgby-rom/RGBY-ROM-stepper.jpg';
+import rgbyRomSensorBarBeltMountingBracket from '../../assets/blog/rgby-rom/RGBY-ROM-sensor-bar-belt-mounting-bracket.jpg';
+import rgbyRomIdler from '../../assets/blog/rgby-rom/RGBY-ROM-idler.jpg';
+import rgbyRomPulley from '../../assets/blog/rgby-rom/RGBY-ROM-pulley.jpg';
+import rgbyRomButtonBracket from '../../assets/blog/rgby-rom/RGBY-ROM-button-bracket.jpg';
+import rgbyRomWallMountingBracket from '../../assets/blog/rgby-rom/RGBY-ROM-wall-mounting-bracket.jpg';
+import rgbyRomPowerDistribution from '../../assets/blog/rgby-rom/RGBY-ROM-power-distribution.jpg';
+import rgbyRomTestStand from '../../assets/blog/rgby-rom/RGBY-ROM-test-stand.jpg';
+import rgbyRomTestStand2 from '../../assets/blog/rgby-rom/RGBY-ROM-test-stand-2.jpg';
+
+RGBY-ROM is a special purpose computer using ROM memory encoded as red, green, blue, and yellow acrylic squares.
+
+<Image src={rgbyRomContext} alt="RGBY ROM context" />
+
+<video
+	controls
+	src="/assets/blog/rgby-rom/videos/RGBY-ROM-demo-video.mp4"
+></video>
+
+Video of the computer loading a program into memory from the RGBY data cartridge that creates patterns on the LED port.
+
+<Image src={rgbyRomRawNits} alt="RGBY ROM raw nits" />
+
+Each acrylic square is called a 'nit' which a coined term that combines bit and nibble creating a representation of data that contains two bits. Four nits are required to make a byte.
+
+| Color  | Binary Representation |
+| ------ | --------------------- |
+| Red    | 00                    |
+| Green  | 01                    |
+| Blue   | 10                    |
+| Yellow | 11                    |
+
+<Image
+	src={rgbyRomDataCartridgeUpclose}
+	alt="RGBY ROM data cartridge upclose"
+/>
+
+The cartridge is a 3D printed grid.
+
+<Image src={rgbyRomDataCartridgeOpen} alt="RGBY ROM data cartridge open" />
+
+The cartrigde dimensions are 12 nits x 32 nits for a total of 384 nits. 384 nits creates 96 bytes. ASM instructions require 3 bytes per instruction therefore each cartrigde contains 32 instructions.
+
+<Image
+	src={rgbyRomDataCartridgeRearScrews}
+	alt="RGBY ROM data cartridge rear screws"
+/>
+
+Two halves of the cartridge are combined using screws.
+
+<Image src={rgbyRomCartridgeHolder} alt="RGBY ROM cartridge holder" />
+
+The mounting frame contains embedded neodymium magnets that interact with the screws to hold the cartridge firmly in place.
+
+<video
+	controls
+	src="/assets/blog/rgby-rom/videos/RGBY-ROM-cartridge-swap.mp4"
+></video>
+
+A video of swaping cartridges.
+
+<Image src={rgbyRomSensorBar} alt="RGBY ROM sensor bar" />
+
+The color sensor bar detects the color of each nit.
+
+<Image src={rgbyRomSensorBarUpclose} alt="RGBY ROM sensor bar upclose" />
+
+The clear circles are custom light pipes created using an SLA printer that indicates the color of the nit and the index of the nit being processed.
+
+<Image src={rgbyRomSensorBarInaction} alt="RGBY ROM sensor bar inaction" />
+
+The color sensor bar stops over each row and determines the color of the nit one column at a time. In this picture, the index of the nit is 3 and the nit's color is green.
+
+<Image src={rgbyRomSwivelMount} alt="RGBY ROM swivel mount" />
+
+The color sensor bar can unlatch from one side and swivel out. Roller bearings were added to keep the color sensor bar a stable distance from the cartidge to increase color detection accuracy. The color sensors are TCS3200's that convert red, green, and blue colors to frequencies.
+
+<Image src={rgbyRomSensorBarPcb} alt="RGBY ROM sensor bar pcb" />
+
+There are twelve TCS3200 sensors, one for each row of the cartrige. The original design attempted using only one sensor on a XY gantry but the mechanics required became to bulky to keep the overall design simple and sleek.
+
+<Image
+	src={rgbyRomRgbAndIndicatorCloseup}
+	alt="RGBY ROM rgb and indicator closeup"
+/>
+
+The computer has two output ports: an RGB LED, and a 8 position LED array. There are three buttons: mode, speed, and reset. Mode and speed are accessible to the computer's program and reset is used to reset the CPU and reload the ROM.
+
+<Image src={rgbyRomMainBoardView} alt="RGBY ROM main board view" />
+
+The CPU is instantiated on a [TinyFPGA BX](https://tinyfpga.com/) FPGA module that uses a Lattice ICE40LP8K. Development was straight forward using the Atom editor with the APIO-IDE plugin.
+
+The main PCB is rather simple and connects a DC-DC power supply, the TinyFPGA, a stepper driver, and breaks outs the various ports.
+
+<Image
+	src={rgbyRomBlockDiagramAndDatapath}
+	alt="RGBY ROM block diagram and datapath.png"
+/>
+
+The custom CPU's block diagram shows how the CPU interacts with various modules and external devices. Because the CPU acts as a color controller for RGB lighting and due to the limited instructions, the PC controller has extra logic that delays instructions to assist in creating color and port patterns.
+
+<Image
+	src={rgbyRomAssemblerScreenshot}
+	alt="RGBY ROM assembler screenshot.png"
+/>
+
+An assembly language and assembler was created from the ground up. The RGBY-ROM Assembly (programmed in QT) is a text editor that displays the available instructions and registers, and updates the resulting color encoded ROM live! The text editor highlights errors in the code such as invalid instructions or too long of a program.
+
+There are three types of instructions: register, immediate, and jump.
+
+<Image
+	src={rgbyRomSchematicSensorBar}
+	alt="RGBY ROM schematic sensor bar.png"
+/>
+
+The color sensor bar schematic shows a straight forward design where the LEDs and color sensors are multiplexed to reduce the amount of control lines from the color sensor bar to the FPGA.
+
+<Image
+	src={rgbyRomSchematicMainBoard}
+	alt="RGBY ROM schematic main board.png"
+/>
+
+The main board schematic shows the simple nature of the system were the FPGA is the only computational module. The schematics and PCBs were design using [DipTrace](https://diptrace.com/), but now that KiCad is matured newer projects use KiCad. (but DipTrace is still a very good platform)
+
+<Image src={rgbyRomElectronics} alt="RGBY ROM electronics" />
+
+The back of RGBY-ROM reveals the wiring and mechatronics. The frame is made from 2020 aluminum extrusions that creates a rigid frame with mounting points along the perimeter.
+
+<Image
+	src={rgbyRomSensorBarRibbonCable}
+	alt="RGBY ROM sensor bar ribbon cable"
+/>
+
+The ribbon cable of the color sensor bar is found the right. The color sensor bar is connected to a belt system.
+
+<Image src={rgbyRomWiringArea} alt="RGBY ROM wiring area" />
+
+The main electronics bay is both a bit dirty and clean.
+
+<Image src={rgbyRomStepper} alt="RGBY ROM stepper" />
+
+Looking from the bottom up you can see the dual shaft NEMA 14 stepper with pulleys on both sides.
+
+<Image
+	src={rgbyRomSensorBarBeltMountingBracket}
+	alt="RGBY ROM sensor bar belt mounting bracket"
+/>
+
+Here is the limit switch for the color sensor bar. All the 3D printed parts were printed using eSun black PLA filament using my QIDI x2 printer (which since has been replaced with Vorons).
+
+<Image src={rgbyRomIdler} alt="RGBY ROM idler" />
+
+The idles are custom made by combining a printed idler body with small bearings and a 3mm diameter shaft.
+
+<Image src={rgbyRomPulley} alt="RGBY ROM pulley" />
+
+Here is the pulley.
+
+<Image src={rgbyRomButtonBracket} alt="RGBY ROM button bracket" />
+
+This bracket contains tactile switches for the user buttons.
+
+<Image src={rgbyRomWallMountingBracket} alt="RGBY ROM wall mounting bracket" />
+
+At the top of the frame is the wall mounting plate that couples with a nail.
+
+<Image src={rgbyRomPowerDistribution} alt="RGBY ROM power distribution" />
+
+The power distribution hub uses a custom board made for projects like this one.
+
+<Image src={rgbyRomTestStand} alt="RGBY ROM test stand" />
+
+Here is the development platform showing the original intent of using only one color sensor.
+
+<Image src={rgbyRomTestStand2} alt="RGBY ROM test stand 2" />
+
+Most of the development was performed on this setup... needless to say a [digital logic analyizer](https://www.sparkfun.com/products/18627) along with [Sigrok](https://sigrok.org/wiki/Main_Page) was extensively used.
+
+Glad to you see you make it this far! The RGBY-ROM is in my top favorite projects because it touches so many fun topics: computer engineer, programming, PCB design, mechanical design, 3D printing, and electronic assembly.

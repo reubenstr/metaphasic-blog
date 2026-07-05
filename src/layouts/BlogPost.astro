@@ -1,0 +1,132 @@
+---
+import { Image } from 'astro:assets';
+import type { CollectionEntry } from 'astro:content';
+import BaseHead from '../components/BaseHead.astro';
+import Footer from '../components/Footer.astro';
+import FormattedDate from '../components/FormattedDate.astro';
+import Header from '../components/Header.astro';
+import TopVerticalLine from '../components/TopVerticalLine.astro';
+
+type Props = CollectionEntry<'blog'>['data'] & { repoLink?: string };
+
+const { title, description, pubDate, updatedDate, heroImage, repoLink } =
+	Astro.props;
+---
+
+<html lang="en">
+	<head>
+		<BaseHead title={title} description={description} />
+		<style>
+			main {
+				width: calc(100% - 2em);
+				max-width: 100%;
+				margin: 0;
+			}
+			.container {
+				display: flex;
+				flex-direction: column;
+			}
+			.hero-image {
+				width: 100%;
+			}
+			.hero-image img {
+				display: block;
+				margin: 0 auto;
+				border-radius: var(--border-radius);
+				border: var(--border-width) solid var(--border-color);
+			}
+			.prose {
+				width: 720px;
+				max-width: calc(100% - 2em);
+				margin: auto;
+				padding: 1em;
+				color: var(--fg);
+			}
+			.title {
+				margin-bottom: 1em;
+				padding: 1em 0;
+				text-align: center;
+				line-height: 1;
+				font-family: var(--font-orbitron);
+				border-radius: var(--border-radius);
+				border: var(--border-width) solid var(--border-color);
+			}
+			.title h1 {
+				margin: 0;
+			}
+			.date {
+				margin-bottom: 0.5em;
+				color: var(--ink);
+			}
+			.last-updated-on {
+				font-style: italic;
+			}
+			.repo-link-wrapper {
+				text-align: center;
+			}
+			.repo-link {
+				display: inline-block;
+				margin-top: 2em;
+				padding: 0.6em 1.2em;
+				border-radius: var(--border-radius);
+				background-color: #ff3445;
+				color: #fff;
+				font-weight: 600;
+				text-decoration: none;
+				transition: background-color 0.2s ease;
+			}
+			.repo-link:hover {
+				background-color: #c1121f;
+			}
+		</style>
+	</head>
+
+	<body>
+		<Header />
+		<main>
+			<article>
+				<div class="container">
+					<TopVerticalLine />
+					<div class="hero-image">
+						{
+							heroImage && (
+								<Image width={1020} height={510} src={heroImage} alt="" />
+							)
+						}
+					</div>
+				</div>
+				<div class="prose">
+					<div class="title">
+						<div class="date">
+							<FormattedDate date={pubDate} />
+							{
+								updatedDate && (
+									<div class="last-updated-on">
+										Last updated on <FormattedDate date={updatedDate} />
+									</div>
+								)
+							}
+						</div>
+						<h1>{title}</h1>
+					</div>
+					<slot />
+					{
+						repoLink && (
+							<div class="repo-link-wrapper">
+								<a
+									class="repo-link"
+									href={repoLink}
+									target="_blank"
+									rel="noopener noreferrer"
+								>
+									Link to GitHub Repo
+								</a>
+							</div>
+						)
+					}
+				</div>
+			</article>
+		</main>
+		<Footer />
+	</body>
+</html>

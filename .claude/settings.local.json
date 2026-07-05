@@ -1,0 +1,8 @@
+{
+	"permissions": {
+		"allow": [
+			"Bash(rm -f /tmp/theme-light.png /tmp/theme-toggled.png /tmp/theme-reloaded.png /tmp/theme-device-dark.png)"
+		],
+		"additionalDirectories": ["/tmp"]
+	}
+}

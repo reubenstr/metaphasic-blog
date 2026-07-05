@@ -1,0 +1,59 @@
+---
+title: 'Coil Winder'
+description: 'Winding machine to make electric instrument pickups.'
+heroImage: '../../assets/blog/coil-winder/coil-winder-cover.jpg'
+pubDate: '2021-03-01T00:00:00.000Z'
+pinned: false
+repoLink: 'https://github.com/reubenstr/CoilWinder'
+---
+
+import { Image } from 'astro:assets';
+import coilWinderPickupWinding from '../../assets/blog/coil-winder/coil-winder-pickup-winding.jpg';
+import coilWinderMotors from '../../assets/blog/coil-winder/coil-winder-motors.jpg';
+import coilWinderIndexer from '../../assets/blog/coil-winder/coil-winder-indexer.jpg';
+import coilWinderLcd from '../../assets/blog/coil-winder/coil-winder-lcd.jpg';
+import coilWinderControlWiring from '../../assets/blog/coil-winder/coil-winder-control-wiring.jpg';
+import coilWinderPcbUnpopulated from '../../assets/blog/coil-winder/coil-winder-pcb-unpopulated.jpg';
+import coilWinderElectronicsPcb from '../../assets/blog/coil-winder/coil-winder-electronics-pcb.jpg';
+import coilWinderElectronics from '../../assets/blog/coil-winder/coil-winder-electronics.jpg';
+import coilWinderBenchTest from '../../assets/blog/coil-winder/coil-winder-bench-test.jpg';
+
+This is a automatic coil winder to make coils for electric instruments and was built primary to build single coils for the [Melodic Chimes](/posts/melodic-chimes) project.
+
+<Image src={coilWinderPickupWinding} alt="coil winder pickup winding" />
+
+This image shows the start of a single coil (black bobin). The oblong part on the bottom of the rigging contains neodymium magnets for the hall effect RPM sensor.
+
+<Image src={coilWinderMotors} alt="coil winder motors" />
+
+The winding motor is a 1000RPM gear head DC motor. In retrospect, a 3-phase brushless motor (BLDC) should of been used since the motor controller can set precisely speed and the BLDC motors operate with greatly reduced vibration and noise.
+
+<Image src={coilWinderIndexer} alt="coil winder indexer" />
+
+The indexer rides up and down as the coil winds to help create tightly packed and event windings.
+
+<Image src={coilWinderLcd} alt="coil winder lcd" />
+
+Using the control panel the user can set the motor RPM, number of revolutions, the indexer start and stop heights, and more.
+
+<Image src={coilWinderControlWiring} alt="coil winder control wiring" />
+
+The control panel wiring is straigh forward and the LCD connection is made simple by using a I2C adapter interface.
+
+<Image src={coilWinderPcbUnpopulated} alt="coil winder pcb unpopulated" />
+
+A quick board was spun up using [DipTrace](https://diptrace.com/).
+
+<Image src={coilWinderElectronicsPcb} alt="coil winder electronics pcb" />
+
+The microcontroller is a Arduino Nano.
+
+<Image src={coilWinderElectronics} alt="coil winder electronics" />
+
+Under the control panel the PCB is secured.
+
+<Image src={coilWinderBenchTest} alt="coil winder bench test" />
+
+Prototyping occured using a breadboard and custom button/LED breakout board.
+
+The project was success and I was able to easily wind the pickups required for the [Melodic Chimes](/posts/melodic-chimes) project.

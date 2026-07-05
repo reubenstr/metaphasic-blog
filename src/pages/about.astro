@@ -1,0 +1,46 @@
+---
+import { Image } from 'astro:assets';
+import MyImage from '../assets/images/reuben-strangelove-with-sydney.jpg';
+import Layout from '../layouts/Page.astro';
+import TopVerticalLine from '../components/TopVerticalLine.astro';
+---
+
+<Layout>
+	<div class="container">
+		<TopVerticalLine />
+		<div class="about-image">
+			<Image
+				class="centered"
+				src={MyImage}
+				alt="Reuben Strangelove with Sydney"
+			/>
+		</div>
+	</div>
+
+	<p>
+		Hello everybody! I'm Reuben Strangelove and my passion is building
+		cyber-physical systems combining data or mechanisms with visually
+		interesting presentations. I enjoy developing the full software/hardware
+		stack from the PCBs, firmware, communcation architecture, to the cloud
+		endpoints, database, and frontend GUI/dashboard.
+	</p>
+
+	<p>
+		My goal with Metaphasic Labs is inspiring current and future makers by
+		showing completed projects with detailed images, providing design files, and
+		sharing source code.
+	</p>
+
+	<p>Go out and make something fun!</p>
+</Layout>
+
+<style>
+	.container {
+		display: flex;
+		flex-direction: column;
+	}
+	.centered {
+		display: block;
+		margin: 0 auto;
+	}
+</style>

@@ -1,0 +1,56 @@
+---
+title: 'Spot Clock 2'
+description: 'Live metals prices'
+heroImage: '../../assets/blog/spot-clock-2/spot-clock-2-cover.jpg'
+pubDate: '2021-04-15T00:00:00.000Z'
+pinned: false
+repoLink: 'https://github.com/reubenstr/SpotClock2'
+---
+
+import { Image } from 'astro:assets';
+import spotClock2Digits from '../../assets/blog/spot-clock-2/spot-clock-2-digits.jpg';
+import spotClock2ElementIndicators from '../../assets/blog/spot-clock-2/spot-clock-2-element-indicators.jpg';
+import spotClock2Controls from '../../assets/blog/spot-clock-2/spot-clock-2-controls.jpg';
+import spotClock2Back from '../../assets/blog/spot-clock-2/spot-clock-2-back.jpg';
+import spotClock2PowerSupply from '../../assets/blog/spot-clock-2/spot-clock-2-power-supply.jpg';
+import spotClock2Esp8266 from '../../assets/blog/spot-clock-2/spot-clock-2-esp8266.jpg';
+import spotClock2Front from '../../assets/blog/spot-clock-2/spot-clock-2-front.jpg';
+
+Spot Clock 2 shows live Au, Ag, and Pt spot prices.
+
+<Image src={spotClock2Digits} alt="spot clock 2 digits" />
+
+Large digits were custom designed to fit the size of the frame.
+
+<Image
+	src={spotClock2ElementIndicators}
+	alt="spot clock 2 element indicators"
+/>
+
+The element indicates illumunate when the spot price of their respective metal is displayed on the numberic display.
+
+<Image src={spotClock2Controls} alt="spot clock 2 controls" />
+
+The controls section allows manual selection of the metal of choice (otherwise the metals automatically rotate), the on-off power, and the connection indicator shows the WiFi and API status.
+
+<Image src={spotClock2Back} alt="spot clock 2 back" />
+
+The back reveals the magic. Underneath the wood plates are NeoPixel strips that fit into the numeric segments.
+
+<Image src={spotClock2PowerSupply} alt="spot clock 2 power supply" />
+
+Unlike my most other dashboards, this one is power via 120AC and using a MeanWell AC to DC PSU. In retrospect, I could of used my standard 12vDC 1A PSU since the digit LEDs are only solid red, green, or blue and should draw under 5 watts.
+
+<Image src={spotClock2Esp8266} alt="spot clock 2 esp8266" />
+
+I used a ESP8266 since I had a few around.
+
+<Image src={spotClock2Front} alt="spot clock 2 front" />
+
+A flaw in this project is the poor contrast between the illuminated digits and the faceplate. This picture is a fair representation of this flaw.
+
+<hr />
+
+Update:
+
+I since reworked the entire faceplate for better contrast and turned the metal indicators into buttons. At some point I will take pictures and update this post.

@@ -1,0 +1,49 @@
+---
+title: 'Interactive 4-bit Adder'
+description: '4-bit Adder'
+heroImage: '../../assets/blog/4-bit-adder/4-bit-adder-cover.jpg'
+pubDate: 'Oct 01 2020'
+pinned: false
+repoLink: 'https://github.com/reubenstr/4-BitAdder'
+---
+
+import { Image } from 'astro:assets';
+import fourBitAdderFront from '../../assets/blog/4-bit-adder/4-bit-adder-front.jpg';
+import fourBitAdderToggleSwitches from '../../assets/blog/4-bit-adder/4-bit-adder-toggle-switches.jpg';
+import fourBitAdderAngleCloseUp from '../../assets/blog/4-bit-adder/4-bit-adder-angle-close-up.jpg';
+import fourBitAdderLegend from '../../assets/blog/4-bit-adder/4-bit-adder-legend.jpg';
+import fourBitAdderBackAngle from '../../assets/blog/4-bit-adder/4-bit-adder-back-angle.jpg';
+import fourBitAdderBracketWireing from '../../assets/blog/4-bit-adder/4-bit-adder-bracket-wireing.jpg';
+import fourBitAdderPsuAndArduino from '../../assets/blog/4-bit-adder/4-bit-adder-psu-and-arduino.jpg';
+
+4-Bit Adder is an educational dashboard that allows interaction between user input and the illuminated graphics showing the descete logic required to make a 4-bit adder.
+
+<Image src={fourBitAdderFront} alt="4 bit adder front" />
+
+The LEDs change state depending on the user input and indicate the logic state of inputs and outputs of descrete components.
+
+<Image src={fourBitAdderToggleSwitches} alt="4 bit adder toggle switches" />
+
+Users input two 4-bit numbers using toggle switches under the INPUT section. The COMPUTATION section shows the binary math. And, the RESULT section shows the resulting value represented as binary.
+
+<Image src={fourBitAdderAngleCloseUp} alt="4 bit adder angle close up" />
+
+The 4-bit adder is the classic adder pattern using XORs, ANDs, and ORs.
+
+<Image src={fourBitAdderLegend} alt="4 bit adder legend" />
+
+The Legend shows XOR, AND, and OR truth tables and a binary to decimal conversion as an aid to help teach descrete logic and conversions.
+
+<Image src={fourBitAdderBackAngle} alt="4 bit adder back angle" />
+
+The back reveals a wiring mess!
+
+<Image src={fourBitAdderBracketWireing} alt="4 bit adder bracket wireing" />
+
+The LEDs of each adder section are held in place using a 3D printed bracket. And each LED is connected to a port of a I2C PCA9685 PWM driver.
+
+In retrospect, it would of been easier to design a PCB for each section that would contain the LEDs, resistors, and a PCA9685 driver versus soldering everything by hand.
+
+<Image src={fourBitAdderPsuAndArduino} alt="4 bit adder psu and arduino" />
+
+An Arduino Nano (Atmega328p) was used due to very low computational requirements of the project.

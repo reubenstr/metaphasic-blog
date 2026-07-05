@@ -1,0 +1,23 @@
+---
+import { FOOTER_QUOTE } from '../consts';
+
+const today = new Date();
+---
+
+<footer>
+	<p class="quote">{FOOTER_QUOTE}</p>
+	&copy; {today.getFullYear()} Metaphasic Labs. All rights reserved.
+</footer>
+<style>
+	footer {
+		padding: 2em 1em 2em 1em;
+		background: var(--ink);
+		color: var(--bg);
+		text-align: center;
+		font-family: var(--font-orbitron);
+	}
+	.quote {
+		margin: 0 0 1em 0;
+		font-family: var(--font-orbitron);
+	}
+</style>

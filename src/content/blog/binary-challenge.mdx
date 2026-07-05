@@ -1,0 +1,69 @@
+---
+title: 'Binary Challenge'
+description: 'A game to test binary conversion skill'
+heroImage: '../../assets/blog/binary-challenge/binary-challenge-cover.jpg'
+pubDate: '2021-01-01T00:00:00.000Z'
+pinned: false
+repoLink: 'https://github.com/reubenstr/BinaryChallenge'
+---
+
+import { Image } from 'astro:assets';
+import binaryChallengeLcdDisplay from '../../assets/blog/binary-challenge/binary-challenge-lcd-display.jpg';
+import binaryChallengeLedSegmentDisplays from '../../assets/blog/binary-challenge/binary-challenge-led-segment-displays.jpg';
+import binaryChallengeToggles from '../../assets/blog/binary-challenge/binary-challenge-toggles.jpg';
+import binaryChallengeSwitchAndJack from '../../assets/blog/binary-challenge/binary-challenge-switch-and-jack.jpg';
+import binaryChallengeCadRender from '../../assets/blog/binary-challenge/binary-challenge-cad-render.png';
+import binaryChallengeCadScreenshot from '../../assets/blog/binary-challenge/binary-challenge-cad-screenshot.png';
+import binaryChallengeBack from '../../assets/blog/binary-challenge/binary-challenge-back.jpg';
+import binaryChallengeWiring from '../../assets/blog/binary-challenge/binary-challenge-wiring.jpg';
+import binaryChallengeMicrocontrollerEsp32 from '../../assets/blog/binary-challenge/binary-challenge-microcontroller-esp32.jpg';
+
+Binary Challenge is a game to test your skill of quickly converting decimal or hexadecimal to binary.
+
+<Image src={binaryChallengeLcdDisplay} alt="binary challenge lcd display" />
+
+The LCD display shows your score based on time to complete, number of challenges remaining, and a count down before showing the number to convert.
+
+<Image
+	src={binaryChallengeLedSegmentDisplays}
+	alt="binary challenge led segment displays"
+/>
+
+The 7-segment displays show the binary and hexadecimal representation of the binary as selected by the toggle swicthes after your conversion attempt.
+
+<Image src={binaryChallengeToggles} alt="binary challenge toggles" />
+
+The eight toggles are used to generate your conversion of the number into binary. Once you have your conversion complete the capture button locks it in and the game checks your input for correctness.
+
+<Image
+	src={binaryChallengeSwitchAndJack}
+	alt="binary challenge switch and jack"
+/>
+
+There is a power switch and a 2.1mm barrel jack connector for power.
+
+<Image src={binaryChallengeCadRender} alt="binary challenge cad render" />
+
+The enclosure, faceplate, and display bezels were created in Fusion360 and mocked for fit prior to 3D printing.
+
+<Image
+	src={binaryChallengeCadScreenshot}
+	alt="binary challenge cad screenshot"
+/>
+
+The faceplate is laser cut from 3mm acrylic. The acrylic comes with paper masking and the laser etches away the lettering and other elements leaving those areas exposed. After a quick application of black spray paint and a 20 minute for the paint to dry, the paper masking is peeled away leaving a nice black and white faceplate.
+
+<Image src={binaryChallengeBack} alt="binary challenge back" />
+
+The back plate is also 3mm white acrylic.
+
+<Image src={binaryChallengeWiring} alt="binary challenge wiring" />
+
+Wiring and soldering took a little bit of time, but nothing challenging.
+
+<Image
+	src={binaryChallengeMicrocontrollerEsp32}
+	alt="binary challenge microcontroller esp32"
+/>
+
+The microcontroller is an ESP32 choosen for the memory required for the display's splash screen and because they are inexpensive.
