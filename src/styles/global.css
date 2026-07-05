@@ -31,22 +31,30 @@
 	--fg: rgb(210, 210, 210);
 	--surface: rgb(25, 25, 25);
 	--ink: rgb(210, 210, 210);
-	--border-color: rgb(110, 110, 110);
+	--border-color: rgb(80, 80, 80);
+	--box-shadow:
+		0 2px 6px rgba(0, 0, 0, 45%), 0 8px 24px rgba(0, 0, 0, 55%),
+		0 16px 32px rgba(0, 0, 0, 55%);
 }
 
 @media (prefers-color-scheme: dark) {
 	:root:not([data-theme='light']) {
-		--bg: rgb(15, 18, 25);
-		--fg: rgb(235, 235, 235);
-		--surface: rgb(26, 30, 41);
-		--ink: rgb(235, 235, 235);
-		--border-color: rgb(235, 235, 235);
+		--bg: rgb(25, 25, 25);
+		--fg: rgb(210, 210, 210);
+		--surface: rgb(25, 25, 25);
+		--ink: rgb(210, 210, 210);
+		--border-color: rgb(80, 80, 80);
+		--box-shadow:
+			0 2px 6px rgba(0, 0, 0, 45%), 0 8px 24px rgba(0, 0, 0, 55%),
+			0 16px 32px rgba(0, 0, 0, 55%);
 	}
 }
+
 html,
 body {
 	height: 100%;
 }
+
 body {
 	font-family: var(--font-atkinson);
 	margin: 0;
@@ -66,13 +74,22 @@ body {
 		background-color 0.2s ease,
 		color 0.2s ease;
 }
+
 main {
+	width: calc(100% - 2em);
+	max-width: 100%;
+	margin: 0;
+	flex: 1 0 auto;
+}
+
+.prose {
 	width: 720px;
 	max-width: calc(100% - 2em);
 	margin: auto;
-	padding: 0em 1.5em 1.5em 1.5em;
-	flex: 1 0 auto;
+	padding: 0 1.5em 1.5em 1.5em;
+	color: var(--fg);
 }
+
 h1,
 h2,
 h3,
@@ -83,80 +100,101 @@ h6 {
 	color: var(--ink);
 	line-height: 1.2;
 }
+
 h1 {
 	font-size: 3.052em;
 }
+
 h2 {
 	font-size: 2.441em;
 }
+
 h3 {
 	font-size: 1.953em;
 }
+
 h4 {
 	font-size: 1.563em;
 }
+
 h5 {
 	font-size: 1.25em;
 }
+
 strong,
 b {
 	font-weight: 700;
 }
+
 a {
 	color: var(--accent);
 }
+
 a:hover {
 	color: var(--accent);
 }
+
 p {
 	font-family: var(--font-roboto);
 	margin-bottom: 1em;
 }
+
 .prose p {
 	margin-bottom: 2em;
 }
+
 textarea {
 	width: 100%;
 	font-size: 16px;
 }
+
 input {
 	font-size: 16px;
 }
+
 table {
 	width: 100%;
 }
+
 img {
 	max-width: 100%;
 	height: auto;
 	border-radius: var(--border-radius);
 	border: var(--border-width) solid var(--border-color);
 }
+
 code {
 	padding: 2px 5px;
 	background-color: rgb(var(--gray-light));
 	border-radius: 2px;
 }
+
 pre {
 	padding: 1.5em;
 	border-radius: 8px;
 }
+
 pre > code {
 	all: unset;
 }
+
 blockquote {
 	border-left: 4px solid var(--accent);
 	padding: 0 0 0 20px;
 	margin: 0;
 	font-size: 1.333em;
 }
+
 hr {
 	border: none;
 	border-top: 1px solid var(--border-color);
 }
+
 @media (max-width: 720px) {
 	body {
 		font-size: 18px;
 	}
+
 	main {
 		padding: 0 0 0 1em;
 	}
@@ -165,6 +203,7 @@ hr {
 :root[data-theme='dark'] .no-border-dark {
 	border: none !important;
 }
+
 @media (prefers-color-scheme: dark) {
 	:root:not([data-theme='light']) .no-border-dark {
 		border: none !important;

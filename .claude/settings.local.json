@@ -1,7 +1,8 @@
 {
 	"permissions": {
 		"allow": [
-			"Bash(rm -f /tmp/theme-light.png /tmp/theme-toggled.png /tmp/theme-reloaded.png /tmp/theme-device-dark.png)"
+			"Bash(rm -f /tmp/theme-light.png /tmp/theme-toggled.png /tmp/theme-reloaded.png /tmp/theme-device-dark.png)",
+			"Bash(curl -s http://localhost:4321/blog/ -o /dev/null -w \"%{http_code}\\\\n\")"
 		],
 		"additionalDirectories": ["/tmp"]
 	}

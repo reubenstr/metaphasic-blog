@@ -18,7 +18,10 @@ const posts = (await getCollection('blog')).sort(
 		<style>
 			main {
 				width: 960px;
+				max-width: calc(100% - 2em);
+				margin: auto;
 				padding-top: 1.5em;
+				padding-bottom: 3em;
 			}
 			.container {
 				display: flex;
@@ -45,19 +48,15 @@ const posts = (await getCollection('blog')).sort(
 				display: flex;
 				flex-direction: column;
 				height: 100%;
-				border-radius: var(--border-radius);
-				border: var(--border-width) solid var(--border-color);
-				overflow: hidden;
 			}
 			ul li img {
 				display: block;
+				position: relative;
+				z-index: 1;
 				width: 100%;
 				height: auto;
-				border-radius: 0px;
-				border-left: 0;
-				border-right: 0;
-				border-top: var(--border-width) solid var(--border-color);
-				border-bottom: var(--border-width) solid var(--border-color);
+				box-sizing: border-box;
+				box-shadow: var(--box-shadow);
 			}
 			.title,
 			.description {
@@ -72,12 +71,6 @@ const posts = (await getCollection('blog')).sort(
 			}
 			.description {
 				flex-grow: 1;
-			}
-			ul li a:hover .title,
-			ul li a:hover .description {
-			}
-			ul li a:hover {
-				box-shadow: var(--box-shadow);
 			}
 			@media (max-width: 720px) {
 				ul {
@@ -98,7 +91,7 @@ const posts = (await getCollection('blog')).sort(
 						posts.map((post) => (
 							<li>
 								<div class="container">
-									<a href={`/blog/${post.id}/`} class="no-border-dark">
+									<a href={`/blog/${post.id}/`}>
 										<h4 class="title">{post.data.title}</h4>
 										{post.data.heroImage && (
 											<Image
@@ -106,7 +99,6 @@ const posts = (await getCollection('blog')).sort(
 												height={600}
 												src={post.data.heroImage}
 												alt=""
-												class="no-border-dark"
 											/>
 										)}
 										<p class="description">{post.data.description}</p>

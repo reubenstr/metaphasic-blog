@@ -13,8 +13,9 @@ const isActive = (...hrefs: string[]) =>
 <header>
 	<ThemeToggle />
 	<nav>
-		<h1 class="revolve-bg revolve-text"><a href="/">{SITE_TITLE}</a></h1>
-
+		<h1 class="revolve-bg revolve-text no-border-dark">
+			<a href="/">{SITE_TITLE}</a>
+		</h1>
 		<div class="link-row">
 			<div class="v-line-spacer left"></div>
 			<div class="v-line"></div>
@@ -52,6 +53,7 @@ const isActive = (...hrefs: string[]) =>
 		font-size: 2em;
 		font-family: var(--font-orbitron);
 		border-radius: var(--border-radius);
+		box-shadow: var(--box-shadow);
 	}
 
 	h1 a,

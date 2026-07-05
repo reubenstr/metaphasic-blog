@@ -3,10 +3,11 @@
 //   revolve-bg     -> background-color
 //   revolve-border -> border-color
 //   revolve-text   -> color (including nested <a> tags)
+//   revolve-shadow -> box-shadow
 (function () {
-	const durationMs = 15000;
+	const durationMs = 10000;
 
-	function tick(bgEls, borderEls, textEls) {
+	function tick(bgEls, borderEls, textEls, shadowEls) {
 		const elapsed = Date.now() % durationMs;
 		const hue = (elapsed / durationMs) * 360;
 		const color = `hsl(${hue}, 80%, 60%)`;
@@ -19,16 +20,26 @@
 				link.style.color = 'rgb(var(--black))';
 			}
 		}
+		const glowColor = `hsl(${hue}, 80%, 60%, 55%)`;
+		for (const el of shadowEls)
+			el.style.boxShadow = `0 0 16px 4px ${glowColor}`;
 
-		requestAnimationFrame(() => tick(bgEls, borderEls, textEls));
+		requestAnimationFrame(() => tick(bgEls, borderEls, textEls, shadowEls));
 	}
 
 	function start() {
 		const bgEls = document.querySelectorAll('.revolve-bg');
 		const borderEls = document.querySelectorAll('.revolve-border');
 		const textEls = document.querySelectorAll('.revolve-text');
-		if (!bgEls.length && !borderEls.length && !textEls.length) return;
-		requestAnimationFrame(() => tick(bgEls, borderEls, textEls));
+		const shadowEls = document.querySelectorAll('.revolve-shadow');
+		if (
+			!bgEls.length &&
+			!borderEls.length &&
+			!textEls.length &&
+			!shadowEls.length
+		)
+			return;
+		requestAnimationFrame(() => tick(bgEls, borderEls, textEls, shadowEls));
 	}
 
 	if (document.readyState === 'loading') {
